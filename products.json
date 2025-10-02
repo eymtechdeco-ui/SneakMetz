@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "brand": "Nike",
+    "model": "Air Max Plus Black University Gold",
+    "sku": "DX2663 001",
+    "sizes": ["38.5"],
+    "retail_price": "130€",
+    "market_avg": "≈135€",
+    "price": "",
+    "condition": "Neuf",
+    "notes": ""
+  },
+  {
+    "brand": "Nike",
+    "model": "Air Max Plus GS Photon Dust",
+    "sku": "CD0609 017",
+    "sizes": ["38"],
+    "retail_price": "",
+    "market_avg": "",
+    "price": "",
+    "condition": "Neuf",
+    "notes": ""
+  },
+  {
+    "brand": "Nike",
+    "model": "Dunk Low Retro Grey Fog",
+    "sku": "DD1391 103",
+    "sizes": ["41", "42.5", "46"],
+    "retail_price": "",
+    "market_avg": "≈72€",
+    "price": "",
+    "condition": "Neuf",
+    "notes": ""
+  }
+]
