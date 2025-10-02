@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SneakMetz – Site vitrine sneakers (Neuf)</title>
+  <meta name="description" content="SneakMetz : sélection de sneakers neuves à Metz. Dunk, Air Jordan, Yeezy, Adidas Campus, UGG et plus.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="products.json" as="fetch" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>SneakMetz</h1>
+      <p>Catalogue de sneakers <strong>neuves</strong> – retrait sur Metz &amp; envoi possible</p>
+      <div class="contact-quick">
+        <a class="pill" href="mailto:sneakmetz@gmail.com">sneakmetz@gmail.com</a>
+        <a class="pill" href="https://wa.me/33673115263">WhatsApp : 06 73 11 52 63</a>
+      </div>
+      <a class="cta" href="#catalogue">Voir le catalogue</a>
+    </div>
+  </header>
+
+  <section class="filters" id="catalogue">
+    <div class="filters-inner">
+      <input type="search" id="search" placeholder="Recherche (modèle, SKU, marque)…">
+      <select id="brand">
+        <option value="">Toutes marques</option>
+        <option>Nike</option>
+        <option>Jordan</option>
+        <option>Adidas</option>
+        <option>Yeezy</option>
+        <option>UGG</option>
+      </select>
+      <select id="size">
+        <option value="">Toutes tailles</option>
+      </select>
+      <select id="condition">
+        <option value="">État</option>
+        <option>Neuf</option>
+      </select>
+      <button id="reset">Réinitialiser</button>
+    </div>
+  </section>
+
+  <main class="grid" id="grid"></main>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Dispo / prix / réservation : écris-moi 👇</p>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:sneakmetz@gmail.com?subject=Demande%20d%27info%20SneakMetz">Écrire par e‑mail</a>
+      <a class="btn primary" href="https://wa.me/33673115263?text=Hello%20SneakMetz%20!%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20une%20paire.">WhatsApp</a>
+    </div>
+    <form class="mailto" action="mailto:sneakmetz@gmail.com" method="post" enctype="text/plain">
+      <label>Votre nom<input name="Nom" required></label>
+      <label>Votre e‑mail<input type="email" name="Email" required></label>
+      <label>Message<textarea name="Message" rows="4" placeholder="SKU / Taille / Question…"></textarea></label>
+      <button type="submit" class="btn">Envoyer par e‑mail</button>
+      <p class="hint">Astuce : vous pouvez aussi m’écrire directement sur WhatsApp.</p>
+    </form>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Les paires sont-elles neuves ?</summary>
+      <p>Oui, toutes les paires sont en <strong>état neuf</strong>, jamais portées.</p>
+    </details>
+    <details>
+      <summary>Comment récupérer ma commande ?</summary>
+      <p>Retrait sur Metz (rdv) ou expédition suivie en France. Mondial Relay/Colissimo au choix.</p>
+    </details>
+    <details>
+      <summary>Pouvez-vous vérifier un SKU précis ?</summary>
+      <p>Oui, indiquez le SKU et la pointure voulue. Je reviens vers vous avec la dispo et le prix.</p>
+    </details>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 SneakMetz •
+       <a href="mentions.html">Mentions légales</a> · <a href="cgv.html">CGV</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
